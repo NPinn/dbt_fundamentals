@@ -44,3 +44,50 @@ select 1 as id
 15:48:10.093039 [info ]: 
 ==================== Execution Summary =====================
 Finished 'init' successfully for target 'dev' [5.5s]
+==================== 2026-09-30T16:02:38.863414Z | 01a0f30d-bc8c-7fe3-8b8b-4b4041e5400a ====================
+16:02:38.865991 [info ]: Installing dbt project and profile setup
+16:02:38.872701 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+16:02:38.906835 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+16:02:38.907924 [info ]: Success Project created successfully!
+16:02:38.908206 [info ]: Info Project name: jaffle_shop_1
+16:02:38.908325 [info ]: Info Project directory: jaffle_shop_1
+16:02:45.737191 [info ]: Info Using existing profile 'jaffle_shop'
+16:02:45.747169 [info ]: Success Set profile 'jaffle_shop' in dbt_project.yml
+16:02:45.747972 [info ]: Validating profile inputs, adapters, and connection
+
+16:02:45.748618 [info ]: dbt 2.0.6
+16:02:45.754933 [info ]: Started loading project
+16:02:45.811887 [info ]: Loading ~/.dbt/profiles.yml
+16:02:45.837618 [info ]: Finished loading project [  0.08s]
+16:02:45.843395 [info ]: Started debugging
+16:02:45.844533 [info ]: Debugging profile: dev
+16:02:45.844731 [info ]: Debugging dbt version: 2.0.6
+16:02:45.844993 [info ]: Debugging platform: windows x86_64 (windows)
+16:02:45.846386 [info ]: Debugging adapter type: snowflake (remote)
+16:02:45.904645 [info ]: Debugging dependencies:
+  git: OK
+16:02:45.909906 [info ]: Debugging connection:
+  "account": "JDFQACB-ZH03865",
+  "user": "NPINNOCK",
+  "database": "analytics",
+  "warehouse": "SNOWFLAKE_LEARNING_WH",
+  "schema": "analytics_prod",
+  "role": "accountadmin"
+16:02:45.928054 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.18
+16:02:46.864646 [debug]: borrow_tlocal_connection() took 942.3973ms
+16:02:46.874519 [debug]: create_debug_span(...).entered() took 1.4851ms
+16:02:46.967843 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 91.128ms
+16:02:46.968072 [debug]: reader.schema() took 203.7µs
+16:02:46.973959 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 99.4068ms
+16:02:46.977372 [debug]: concat_batches + normalize_result_column_names took 3.3741ms
+16:02:46.978288 [debug]: record_current_span_status_from_attrs took 880µs
+16:02:46.978499 [debug]: Query executed on node unknown:
+select 1 as id
+16:02:46.978724 [debug]: drop(query_span_guard) (span exit/export) took 415.4µs
+16:02:46.984061 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 119.3839ms
+16:02:46.985226 [info ]: Debugging connection test: OK (1.1s)
+16:02:46.988732 [info ]: Debugged All checks passed!
+16:02:46.990116 [info ]: Finished debugging [  1.15s]
+16:02:47.025410 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [8.2s]
