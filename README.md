@@ -1,2 +1,2 @@
-# dbt Fundamentals Project
-This project is for me to test out dbt fundamentals
+# dbt Learning Project
+This project is for me to follow the dbt Learning Track
